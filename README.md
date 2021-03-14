@@ -1,6 +1,6 @@
 # HashMap-Project
-Given a dictionary, find the largest set of anagram words
-A anagram is a word that uses the same set of letters
+Given a dictionary, find the largest set of anagram words<br>
+A anagram is a word that uses the same set of letters<br>
 Example - Listen, Silent both use the letters eilnst
  *  The dictionary used for this project was downloaded from:
  *  https://github.com/dwyl/english-words
