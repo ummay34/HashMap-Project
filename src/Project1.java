@@ -1,27 +1,6 @@
 /*
- *  CIS263 - Winter 2021
- *  Project1
  *  Given a dictionary, find the largest set of anagram words
  *  Words that use the same set of letters
- *  Suggestion:
- *  Use a map with the following structure
- *  Key: A string
- *  Value: A set (LinkedList, ArrayList, TreeSet) of words
- *  Pseudo-code
- *  Read all the words in the dictionary
- *  For each word in the dictionary
- *     Calculate the key
- *     Check if the key is already present in the map
- *     If it is not present in the map
- *         Instantiate a new list, add this word to the list
- *         Add this key and this new list to the map
- *     else
- *         Retrieve the list associated with this key
- *         Add this word to that list
- *     end-if
- *  end-for
- *  Visit all the entries in the map and find the largest list
- *  Print the largest list
  *
  *  The dictionary used for this project was downloaded from:
  *  https://github.com/dwyl/english-words
@@ -104,11 +83,9 @@ public class Project1 {
     }
 
 
-    // This method might be helpful.
-    // It takes a string and converts it into an array of characters
-    // It sorts the array of characters
-    // It creates a new String with that array of characters
-    // All the words that are anagrams will have the same key
+   
+    //Takes a string and converts it into an array of characters
+    //Sorts array of chars, that way all anagrams will have the same key after being sorted 
     public String convertToKey(String word) {
         char [] chars = word.toCharArray();
         Arrays.sort(chars);
